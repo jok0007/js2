@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-style: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    letter-spacing: none;
+}
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-style: inherit;
+    font-weight: 400;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    padding: 10px;
+    text-align: right;
+    margin: 0px 0px 1.5rem 0px;
+}
+
+.cart-button {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 2px #0d6efd solid;
+    border-radius: 10px;
+    background: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+@media (any-hover: hover) {
+    .cart-button:hover {
+        background-color: #0d6efd;
+        color: #fff;
+    }
+}
+.cart-button:active {
+    background-color: #0d6efd;
+    filter: brightness(90%);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+.goods-list {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.goods-item {
+    border: 2px #0d6efd solid;
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+
+.goods-item h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px 0px 1.4rem 0px;
+}
+
+.goods-item p {
+    text-align: right;
+}
