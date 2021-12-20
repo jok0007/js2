@@ -138,3 +138,44 @@ header {
 .goods-item p {
     text-align: right;
 }
+
+.cart {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cart__close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 1.5rem;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 0px 6px;
+    cursor: pointer;
+}
+
+.cart__content {
+    max-width: 1000px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 50px auto 0px;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
